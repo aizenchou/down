@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC 
+		"-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" 
+		"http://struts.apache.org/dtds/struts-2.1.dtd">
+
+<struts>
+	<package name="software" extends="struts-default" namespace="/admin">
+
+		<!-- 新增信息 -->
+		<action name="addsoftware" class="com.zjut.down.software.action.SoftwareAction"
+			method="saveSoftware">
+			<result name="success">
+				AddSoftware.jsp
+			</result>
+			<result name="error">/admin/error.jsp</result>
+		</action>
+
+	</package>
+</struts>

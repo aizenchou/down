@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<!-- 字符编码 -->
+	<constant name="struts.i18n.encoding" value="UTF-8"></constant>
+	<constant name="struts.locale" value="zh_CN"></constant>
+	<constant name=" struts.i18n.reload" value="true"></constant>
+	<!-- 指定Struts 2处于开发状态 -->
+	<constant name="struts.devMode" value="true" />
+	<!-- 指定当Struts 2配置文件改变后，Web框架是否重新加载Struts 2配置文件 -->
+	<constant name="struts.configuration.xml.reload" value="true"></constant>
+	<!-- 界面静态方法调用 -->
+   	<constant name="struts.ognl.allowStaticMethodAccess" value="true" />
+   	
+   	<!-- 指定允许上传的文件最大字节数。默认值是2097152(2M) -->
+    <constant name="struts.multipart.maxSize" value="1048576000"/>
+    <!-- 设置上传文件的临时文件夹,默认使用javax.servlet.context.tempdir -->
+    <constant name="struts.multipart.saveDir " value="c:/tmp" />
+    
+    
+    <include file="com/zjut/down/software/software.xml" ></include>
+</struts>    
